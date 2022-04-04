@@ -15,7 +15,18 @@ public class Fundamentos {
         var nome = ""; // String
         var EMaiorDeDezoito = true; // boolean
 
-        // wappers - são os objetos em java para cada tipo primitivo
+        // wappers - são os objetos em java para cada tipo primitivo exemplos:
+
+        Integer num1 = 1;
+        Character char1 = 'A';
+        Boolean bo1 = true;
+
+        // conversao de tipos, implicito e explicito
+
+        // explicito
+        int num3 = 1;
+        float num4 = (float) num3;
+        float num5 = num3;
 
     }
 }
