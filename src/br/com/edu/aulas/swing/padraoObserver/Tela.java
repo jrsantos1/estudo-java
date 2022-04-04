@@ -1,4 +1,4 @@
-package br.com.edu.aulas.swing;
+package br.com.edu.aulas.swing.padraoObserver;
 
 import javax.swing.JOptionPane;
 
