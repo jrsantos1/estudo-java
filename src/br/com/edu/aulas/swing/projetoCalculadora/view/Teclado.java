@@ -1,9 +1,13 @@
-package br.com.edu.aulas.swing.projetoCalculadora;
+package br.com.edu.aulas.swing.projetoCalculadora.view;
+
+import br.com.edu.aulas.swing.projetoCalculadora.modelo.Memoria;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Teclado extends JPanel {
+public class Teclado extends JPanel implements ActionListener {
 
     private final Color COR_CINZA_ESCURO = new Color(68,68,68);
     private final Color COR_CINZA_CLARO = new Color(99,99,99);
@@ -12,16 +16,16 @@ public class Teclado extends JPanel {
     public Teclado(){
         //setBackground(Color.cyan);
 
-        GridBagLayout layout = new GridBagLayout();
+        GridBagLayout layout = new GridBagLayout(); // define o tipo de distribuição dos elementos
         GridBagConstraints c = new GridBagConstraints();
 
-        c.fill = GridBagConstraints.BOTH;
-        c.weightx = 1;
-        c.weighty = 1;
+        c.fill = GridBagConstraints.BOTH; // ajusta largura dos elementos/botoes
+        c.weightx = 1; // ajusta a largura dos elementos para o tamanho todal da tela
+        c.weighty = 1; // ajusta a altura dos elementos para o tamanho todal da tela
 
         setLayout(layout);
 
-        c.gridwidth = 3;
+        c.gridwidth = 3; // define a quantidade de colunas que serão utilizadas
         AdicionarBotao("AC", COR_CINZA_ESCURO, c, 0, 0);
         c.gridwidth = 1;
         AdicionarBotao("/", COR_LARANJA, c, 3, 0);
@@ -50,13 +54,22 @@ public class Teclado extends JPanel {
 
     }
 
+    // metodo para adicionar botao junto com os parametros de constraint
     private void AdicionarBotao(String texto, Color cor, GridBagConstraints c, int x, int y) {
 
         Botao botao = new Botao(texto, cor);
         c.gridx = x;
         c.gridy = y;
+        botao.addActionListener(this);
         add(botao, c);
+    }
 
-
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if(e.getSource() instanceof JButton) {
+            JButton botao = (JButton) e.getSource();
+            //System.out.println(botao.getText());
+            Memoria.getInstance().processarComando(botao.getText());
+        }
     }
 }

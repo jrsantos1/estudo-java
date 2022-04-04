@@ -1,4 +1,4 @@
-package br.com.edu.aulas.swing.projetoCalculadora;
+package br.com.edu.aulas.swing.projetoCalculadora.view;
 
 import javax.swing.*;
 import java.awt.*;
