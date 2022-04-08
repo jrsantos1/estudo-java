@@ -8,7 +8,8 @@ public class CriarTabelaPessoas {
     public static void main(String[] args) throws SQLException {
         Connection conexao = DBFactory.getConexao();
 
-        String sql = "CREATE TABLE pessoas (codigo INT AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(80) NOT NULL)";
+        String sql0 = "CREATE TABLE pessoas (codigo INT AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(80) NOT NULL)";
+        String sql = "CREATE TABLE questoes (codigo INT AUTO_INCREMENT PRIMARY KEY, questao VARCHAR(200) NOT NULL, alternativa01 VARCHAR(200) NOT NULL,alternativa02 VARCHAR(200) NOT NULL, alternativa03 VARCHAR(200) NOT NULL, alternativa04 VARCHAR(200) NOT NULL, AlternativaCorreta VARCHAR(200) NOT NULL)";
 
         Statement stmt = conexao.createStatement();
         stmt.execute(sql);
