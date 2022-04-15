@@ -1,16 +1,14 @@
 package br.com.edu.aulas.jdbc;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-import java.util.Scanner;
+import java.util.*;
 
 public class Jogo {
     public void jogar() throws SQLException {
     ConsultarQuestoes cq = new ConsultarQuestoes();
     List<Questoes> listaDequestoes = (ArrayList) cq.consulta();
 
+    Collections.shuffle(listaDequestoes); // embaralhar questões
 
     int qtdQuestoes = listaDequestoes.size();
     int contador = 0;

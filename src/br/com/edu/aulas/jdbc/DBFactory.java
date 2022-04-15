@@ -12,6 +12,7 @@ public class DBFactory {
             String user = "root";
             String password = "root123";
             return DriverManager.getConnection(stringDeConexao, user, password);
+        
         }catch (SQLException e){
             //e.printStackTrace();
             throw new RuntimeException(e);
