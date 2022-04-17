@@ -4,4 +4,9 @@ public class Map {
     // estrutura chave e valor
     // chave não aceita repetição
     // valor aceita repetição
+
+    public static void main(String[] args) {
+
+    }
+
 }

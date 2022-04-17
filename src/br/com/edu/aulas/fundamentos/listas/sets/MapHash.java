@@ -1,6 +1,7 @@
 package br.com.edu.aulas.fundamentos.listas.sets;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class MapHash {
     public static void main(String[] args) {
@@ -14,6 +15,11 @@ public class MapHash {
         }
         for (String v: capitaisBrasil.values()){
             System.out.println(v);
+        }
+
+        for (Map.Entry<String, String> registros: capitaisBrasil.entrySet()){
+            System.out.println(registros.getKey());
+            System.out.println(registros.getValue());
         }
     }
 }
