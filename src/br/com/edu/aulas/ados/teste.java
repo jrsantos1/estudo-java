@@ -10,10 +10,6 @@ public class teste {
 
         int[] numeros = {1,2,3,5,8};
 
-        for (int i: numeros
-             ) {
-
-        }
-
+        for (int i: numeros) {}
     }
 }
