@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Contador {
 
     private double initial;
-    private double finall;
+    private int finall;
 
     Scanner sc = new Scanner(System.in);
 
@@ -18,7 +18,7 @@ public class Contador {
             opcao = (String) sc.nextLine();
         }
 
-        finall = ((System.currentTimeMillis() - initial)/1000);
+        finall = (int) Math.round((System.currentTimeMillis() - initial)/1000);
         System.out.println(finall);
     }
 }
