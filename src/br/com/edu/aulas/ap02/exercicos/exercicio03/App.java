@@ -29,9 +29,6 @@ public class App {
             System.out.println("O dia da semana digitado é: " + diaSemana.get(entradaUsuario));
             System.out.println("Hoje é: " + diaSemana.get(diaSemanaNumero));
         }
-
-
-
     }
 
 }

@@ -3,9 +3,9 @@ package br.com.edu.aulas.ap02.exercicos.exercicio02;
 public class Familia {
     private String apelidoFamilia;
     private Integrante integrante;
-    private static float orcamento;
-    private static int qtdIntegrantes;
-
+    private float orcamento;
+    private float gastosIntegrante;
+    private int qtdIntegrantes;
 
     public Familia(String apelidoFamilia){
         this.apelidoFamilia = apelidoFamilia;
@@ -17,7 +17,8 @@ public class Familia {
 
     public void setIntegrante(Integrante integrante) {
         this.integrante = integrante;
-        orcamento += integrante.getOrcamento();
+        this.orcamento += integrante.getOrcamento();
+        this.gastosIntegrante += integrante.getGastosIntegrante();
         qtdIntegrantes += 1;
     }
 
@@ -33,4 +34,11 @@ public class Familia {
         return qtdIntegrantes;
     }
 
+    public String situacaoOcamento(){
+        if(gastosIntegrante > orcamento){
+            return "Fora do orçamento";
+        }else{
+            return "Dentro do orçamento";
+        }
+    }
 }

@@ -6,7 +6,6 @@ public class App {
     public static void main(String[] args) {
 
         String opcaoDoUsuario = "";
-
         Semaforo semaforo = new Semaforo();
         Scanner sc = new Scanner(System.in);
 
@@ -17,8 +16,6 @@ public class App {
             semaforo.setStatusSemaforo(opcaoDoUsuario);
             semaforo.getAcao();
         }
-        
         }
-
     }
 

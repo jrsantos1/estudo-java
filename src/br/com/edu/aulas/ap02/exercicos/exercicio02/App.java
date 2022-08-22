@@ -23,20 +23,17 @@ public class App {
                 String nomeIntegrante = sc.next();
                 System.out.print("Digite o orçamento do integrante: ");
                 float orcamentoIntegrante = sc.nextFloat();
-                novoIntegrante = new Integrante(nomeIntegrante, orcamentoIntegrante);
+                System.out.print("Digite o total de gastos do integrante: ");
+                float gastosIntegrante = sc.nextFloat();
+                novoIntegrante = new Integrante(nomeIntegrante, orcamentoIntegrante, gastosIntegrante);
                 novaFamilia.setIntegrante(novoIntegrante);
 
             }
         }
-//        Integrante integrante = new Integrante("Jhonatan", 2000);
-//        Integrante integrante2 = new Integrante("Luis", 2500);
-//        Integrante integrante3 = new Integrante("Marcola", 5000);
-//        Familia ribeiro = new Familia("Ribeiro");
-//        ribeiro.setIntegrante(integrante);
-//        ribeiro.setIntegrante(integrante2);
-//        ribeiro.setIntegrante(integrante3);
 
-        System.out.println("Família: " + novaFamilia.getApelidoFamilia() + ". Quantidade de integrantes: " + novaFamilia.getQtdIntegrantes() + ". Orçamento total: " + novaFamilia.getOrcamento());
+        System.out.println("Você está: " + novaFamilia.situacaoOcamento());
+
+        //System.out.println("Família: " + novaFamilia.getApelidoFamilia() + ". Quantidade de integrantes: " + novaFamilia.getQtdIntegrantes() + ". Orçamento total: " + novaFamilia.getOrcamento());
     }
 
 }

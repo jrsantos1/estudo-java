@@ -3,10 +3,12 @@ package br.com.edu.aulas.ap02.exercicos.exercicio02;
 public class Integrante {
     private String nome;
     private float orcamento;
+    private float gastosIntegrante;
 
-    public Integrante(String nome, float orcamento){
+    public Integrante(String nome, float orcamento, float gastosIntegrante){
         this.nome = nome;
         this.orcamento = orcamento;
+        this.gastosIntegrante = gastosIntegrante;
     }
 
     public String getNome() {
@@ -18,7 +20,10 @@ public class Integrante {
     }
 
     public float getOrcamento() {
-        return orcamento;
+        return this.orcamento;
+    }
+    public float getGastosIntegrante() {
+        return this.gastosIntegrante;
     }
 
     public void setOrcamento(float orcamento) {
