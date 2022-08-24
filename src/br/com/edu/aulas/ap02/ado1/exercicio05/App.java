@@ -1,4 +1,4 @@
-package br.com.edu.aulas.ap02.exercicos.exercicio05;
+package br.com.edu.aulas.ap02.ado1.exercicio05;
 
 import java.util.HashMap;
 import java.util.Map;

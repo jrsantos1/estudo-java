@@ -1,4 +1,4 @@
-package br.com.edu.aulas.ap02.exercicos.exercicio04;
+package br.com.edu.aulas.ap02.ado1.exercicio04;
 
 import java.util.Scanner;
 

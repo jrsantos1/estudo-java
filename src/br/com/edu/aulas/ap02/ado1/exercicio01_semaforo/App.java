@@ -1,4 +1,4 @@
-package br.com.edu.aulas.ap02.exercicos.exercicio01_semaforo;
+package br.com.edu.aulas.ap02.ado1.exercicio01_semaforo;
 
 import java.util.Scanner;
 

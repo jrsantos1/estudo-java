@@ -1,7 +1,6 @@
-package br.com.edu.aulas.ap02.exercicos.exercicio08;
+package br.com.edu.aulas.ap02.ado1.exercicio08;
 
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
 

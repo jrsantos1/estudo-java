@@ -1,4 +1,4 @@
-package br.com.edu.aulas.ap02.exercicos.exercicio02;
+package br.com.edu.aulas.ap02.ado1.exercicio02;
 
 public class Integrante {
     private String nome;

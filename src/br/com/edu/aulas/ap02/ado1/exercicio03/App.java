@@ -1,4 +1,4 @@
-package br.com.edu.aulas.ap02.exercicos.exercicio03;
+package br.com.edu.aulas.ap02.ado1.exercicio03;
 
 import java.time.DayOfWeek;
 import java.time.LocalDateTime;
