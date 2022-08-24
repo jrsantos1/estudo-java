@@ -22,14 +22,10 @@ public class exe05 {
         if(quantidadeLinhas < 0){
             throw new ArithmeticException();
         }
-
         for (int i = quantidadeLinhas; i > 0; i--) {
             for (int y = 1; y <= i; y++) {
                 System.out.print("*");
             }
-            System.out.println("Hello, World.");
-            System.out.println("Hello, Java.");
-
             System.out.println("");
         }
 
