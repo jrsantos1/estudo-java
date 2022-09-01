@@ -3,7 +3,7 @@ package br.com.edu.aulas.ap02.exercicos.aula01;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class exe05 {
+public class exe06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -23,18 +23,19 @@ public class exe05 {
         if(quantidadeLinhas < 0){
             throw new ArithmeticException();
         }
-        ArrayList<String> str = new ArrayList<>();
 
-        for (int i = 0; i <= quantidadeLinhas; i++) {
-            str.add("   ");
-        }
 
         for (int i = quantidadeLinhas; i >= 0; i--) {
-            str.set(i, " * ");
-            for (int j = 0; j < quantidadeLinhas; j++) {
-                System.out.print(str.get(j));
+
+            for (int j = 0; j < i; j++) {
+                System.out.print("   ");
             }
-            System.out.println(" ");
+
+            for (int g = quantidadeLinhas; g >= i; g--) {
+                System.out.print(" * ");
+            }
+            System.out.println("");
+
         }
     }
 }

@@ -19,9 +19,5 @@ public class RecursaoFatorial {
             return 1;
         }
         return num * somatorio(num - 1);
-
-
     }
-
-
 }

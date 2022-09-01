@@ -1,5 +1,4 @@
 package br.com.edu.aulas.ap02.ado1.exercicio02;
-
 import java.util.Scanner;
 
 public class App {
@@ -27,13 +26,9 @@ public class App {
                 float gastosIntegrante = sc.nextFloat();
                 novoIntegrante = new Integrante(nomeIntegrante, orcamentoIntegrante, gastosIntegrante);
                 novaFamilia.setIntegrante(novoIntegrante);
-
             }
         }
-
         System.out.println("Você está: " + novaFamilia.situacaoOcamento());
-
-        //System.out.println("Família: " + novaFamilia.getApelidoFamilia() + ". Quantidade de integrantes: " + novaFamilia.getQtdIntegrantes() + ". Orçamento total: " + novaFamilia.getOrcamento());
     }
 
 }

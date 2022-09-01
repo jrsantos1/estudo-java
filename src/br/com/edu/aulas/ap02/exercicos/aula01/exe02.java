@@ -18,20 +18,14 @@ public class exe02 {
         }
     }
     private static void getLinha(int num) {
-
         if(num < 0){
             throw new ArithmeticException();
         }
-
         for (int i = 0; i < num; i++) {
             for (int y = 0; y < num; y++) {
-                System.out.print("* ");
+                System.out.print("*  ");
             }
             System.out.println("");
         }
-
-
-
-
     }
 }

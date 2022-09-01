@@ -26,7 +26,6 @@ public class App {
                 cursoAluno = sc.next().toUpperCase();
             }
         }
-
         // Criando tipos de desconto
         Map<String, Float> tipoDesconto = new HashMap<>();
         tipoDesconto.put("COMERCIO", 0.2f);
