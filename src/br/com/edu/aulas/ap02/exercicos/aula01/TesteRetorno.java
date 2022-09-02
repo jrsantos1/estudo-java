@@ -7,12 +7,10 @@ public class TesteRetorno {
     public static void main(String[] args) {
 
     try {
-
+        System.out.println("Hello Jhonatan");
     }catch (Exception e){
 
     }
-
-
     }
 
 }
