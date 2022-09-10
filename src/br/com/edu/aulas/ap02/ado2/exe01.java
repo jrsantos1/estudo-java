@@ -1,12 +1,12 @@
-package br.com.edu.aulas.ap02.exercicos.aula01;
+package br.com.edu.aulas.ap02.ado2;
 
 import java.util.Scanner;
 
-public class exe02 {
+public class exe01 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite o tamho da linha");
+        System.out.println("Digite o tamanho da linha");
         int tamanhoDaLinha = sc.nextInt();
 
         try {
@@ -18,14 +18,13 @@ public class exe02 {
         }
     }
     private static void getLinha(int num) {
-        if(num < 0){
-            throw new ArithmeticException();
-        }
+
+//        if(num < 0){
+//            throw new ArithmeticException();
+//        }
         for (int i = 0; i < num; i++) {
-            for (int y = 0; y < num; y++) {
-                System.out.print("*  ");
-            }
-            System.out.println("");
+            System.out.print("*");
         }
+
     }
 }

@@ -1,30 +1,29 @@
-package br.com.edu.aulas.ap02.exercicos.aula01;
+package br.com.edu.aulas.ap02.ado2;
 
 import java.util.Scanner;
 
-public class exe04 {
+public class exe02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Digite o tamho da linha");
-        int quantidadeLinhas = sc.nextInt();
+        int tamanhoDaLinha = sc.nextInt();
 
         try {
-            getLinha(quantidadeLinhas);
+            getLinha(tamanhoDaLinha);
         }catch (Exception e){
             String erro = e.getMessage();
             System.out.println("ERRO");
             System.out.println(erro);
         }
     }
-    private static void getLinha(int quantidadeLinhas) {
-
-        if(quantidadeLinhas < 0){
+    private static void getLinha(int num) {
+        if(num < 0){
             throw new ArithmeticException();
         }
-        for (int i = 0; i < quantidadeLinhas; i++) {
-            for (int y = 0; y <= i; y++) {
-                System.out.print("* ");
+        for (int i = 0; i < num; i++) {
+            for (int y = 0; y < num; y++) {
+                System.out.print("*  ");
             }
             System.out.println("");
         }

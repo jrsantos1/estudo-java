@@ -1,23 +1,24 @@
-package br.com.edu.aulas.ap02.exercicos.aula01;
+package br.com.edu.aulas.ap02.ado2;
 
 import java.util.Scanner;
 
-public class RecursaoSomatorioCrescente {
+public class exe09_RecursaoDesc {
 
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
+
         System.out.println("Digite o número para realizar a somatório");
         int num = sc.nextInt();
         int resultado = somatorio(num);
-        System.out.println("O resultado deu: " + resultado);
+        //System.out.println("O resultado deu: " + resultado);
     }
     private static int somatorio(int num) {
-        if (num > 10) {
+
+        if (num <= 0) {
             return 0;
         }
-        return num + somatorio(num + 1);
+        System.out.println(num);
+        return num - somatorio(num - 1);
     }
-
-
 }
