@@ -6,9 +6,8 @@ public class exe02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Digite o tamho da linha");
+        System.out.println("Digite o tamanho da linha");
         int tamanhoDaLinha = sc.nextInt();
-
         try {
             getLinha(tamanhoDaLinha);
         }catch (Exception e){

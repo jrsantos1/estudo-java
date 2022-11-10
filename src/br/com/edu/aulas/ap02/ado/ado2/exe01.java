@@ -19,9 +19,6 @@ public class exe01 {
     }
     private static void getLinha(int num) {
 
-//        if(num < 0){
-//            throw new ArithmeticException();
-//        }
         for (int i = 0; i < num; i++) {
             System.out.print("*");
         }

@@ -1,14 +1,10 @@
 package br.com.edu.aulas.ap02.ado.ado2;
 
 import java.util.Scanner;
-
 public class exe08_RecursaoAsc {
-
     //static int cont = 1;
     static Scanner sc = new Scanner(System.in);
-
     public static void main(String[] args) {
-
         System.out.println("Digite o número incial");
         int num = sc.nextInt();
 

@@ -3,13 +3,10 @@ package br.com.edu.aulas.ap02.ado.ado2;
 import java.util.Scanner;
 
 public class exe11_Potencia {
-
     public static Scanner sc = new Scanner(System.in);
-
     public static void main(String[] args) {
         int resultado = 0;
         int resultadoRecursao = 0;
-
 
         System.out.println("Digite o número base");
         int base = sc.nextInt();
@@ -37,7 +34,6 @@ public class exe11_Potencia {
             retorno = retorno * base;
         }
         return retorno;
-
     }
     private static int funcaoRecursao(int base, int expoente) {
         if (expoente == 0){

@@ -3,9 +3,7 @@ package br.com.edu.aulas.ap02.ado.ado2;
 import java.util.Scanner;
 
 public class RecursaoSomatorioCrescente {
-
     static Scanner sc = new Scanner(System.in);
-
     public static void main(String[] args) {
         System.out.println("Digite o número para realizar a somatório");
         int num = sc.nextInt();
