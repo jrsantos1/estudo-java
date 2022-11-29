@@ -1,10 +1,8 @@
 package br.com.edu.topicos.fundamentos.listas.collections.arraylist.ordenacao_objetos.compator;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-
 class OrdenacaoProduto implements Comparator<Produto>{
 
     @Override
@@ -49,12 +47,11 @@ class Main{
         produtos.add(pudim);
 
         Comparator<? super Produto> OrdenacaoProduto = new OrdenacaoProduto();
-        // produtos.sort(OrdenacaoProduto);
+
+        produtos.sort(OrdenacaoProduto);
 
         Collections.sort(produtos, OrdenacaoProduto);
 
         System.out.println(produtos);
-
-
     }
 }
