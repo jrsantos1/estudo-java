@@ -21,7 +21,6 @@ public class Lista<T> {
         this.objeto[posicao] = object;
 
     }
-
     public T buscar(int posicao){
         if(posicaoOcupada(posicao) == false){
             throw new IllegalArgumentException("Posição inválida");
@@ -49,15 +48,12 @@ public class Lista<T> {
         }
         return false;
     }
-
     public int tamanho(){
         return this.totalDeAluno;
     }
-
     public boolean posicaoOcupada(int posicao){
         return posicao >= 0 && posicao < this.totalDeAluno;
     }
-
     public boolean posicaoValida(int posicao){
         return posicao >= 0 && posicao <= this.totalDeAluno;
     }
@@ -78,6 +74,5 @@ public class Lista<T> {
         alunos.append("]");
 
         return alunos.toString();
-
     }
 }
