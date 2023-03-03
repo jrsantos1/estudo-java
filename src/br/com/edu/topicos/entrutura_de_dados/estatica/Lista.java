@@ -2,11 +2,11 @@ package br.com.edu.topicos.entrutura_de_dados.estatica;
 
 public class Lista<T> {
     private T[] objeto = (T[]) new Object[100];
-    private int totalDeAluno = 0;
+    private int totalElementos = 0;
 
     public void adiciona(T object){
-        this.objeto[this.totalDeAluno] = object;
-        this.totalDeAluno++;
+        this.objeto[this.totalElementos] = object;
+        this.totalElementos++;
     }
 
     public void adiciona(int posicao, T object) {
@@ -14,7 +14,7 @@ public class Lista<T> {
             throw new IllegalArgumentException("posição inválida!");
         }
 
-        for (int i = this.totalDeAluno; i > posicao; i--) {
+        for (int i = this.totalElementos; i > posicao; i--) {
             this.objeto[i + 1] = this.objeto[i];
         }
 
@@ -33,11 +33,11 @@ public class Lista<T> {
             throw new IllegalArgumentException("Posição inválida");
         }
 
-        for (int i = posicao; posicao < this.totalDeAluno -1; posicao++){
+        for (int i = posicao; posicao < this.totalElementos -1; posicao++){
             this.objeto[i] = this.objeto[i + 1];
         }
 
-        this.totalDeAluno--;
+        this.totalElementos--;
     }
 
     public boolean contem(T object){
@@ -49,28 +49,28 @@ public class Lista<T> {
         return false;
     }
     public int tamanho(){
-        return this.totalDeAluno;
+        return this.totalElementos;
     }
     public boolean posicaoOcupada(int posicao){
-        return posicao >= 0 && posicao < this.totalDeAluno;
+        return posicao >= 0 && posicao < this.totalElementos;
     }
     public boolean posicaoValida(int posicao){
-        return posicao >= 0 && posicao <= this.totalDeAluno;
+        return posicao >= 0 && posicao <= this.totalElementos;
     }
 
     public String toString(){
-        if (this.totalDeAluno == 0)
+        if (this.totalElementos == 0)
             return "[]";
 
         StringBuilder alunos = new StringBuilder();
         alunos.append("[");
 
-        for (int i = 0; i < this.totalDeAluno - 1; i++){
+        for (int i = 0; i < this.totalElementos - 1; i++){
             alunos.append(this.objeto[i]);
             alunos.append(", ");
         }
 
-        alunos.append(this.objeto[this.totalDeAluno - 1]);
+        alunos.append(this.objeto[this.totalElementos - 1]);
         alunos.append("]");
 
         return alunos.toString();

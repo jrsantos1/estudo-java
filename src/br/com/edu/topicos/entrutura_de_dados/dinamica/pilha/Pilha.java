@@ -1,23 +1,26 @@
 package br.com.edu.topicos.entrutura_de_dados.dinamica.pilha;
 
 public class Pilha {
+
+    // no referencia de entrada na pilha, le-se de cima para baixo
     private No refNoEntrada;
 
     public Pilha(){
         refNoEntrada = null;
     }
 
+    // remove último elemento da pilha
     public No pop(){
         if(!this.isEmpty()){
             No nopoped = refNoEntrada;
             refNoEntrada = refNoEntrada.getReNo();
             return nopoped;
         }
-
         return null;
     }
 
-    public void push(No novoNo){
+    public void push(int conteudo){
+        No novoNo = new No(conteudo);
         No refAuxiliar = refNoEntrada;
         refNoEntrada = novoNo;
         refNoEntrada.setReNo(refAuxiliar);
