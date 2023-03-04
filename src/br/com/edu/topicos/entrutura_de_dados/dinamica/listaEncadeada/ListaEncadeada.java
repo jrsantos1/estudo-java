@@ -3,29 +3,22 @@ package br.com.edu.topicos.entrutura_de_dados.dinamica.listaEncadeada;
 import br.com.edu.topicos.entrutura_de_dados.estatica.Lista;
 
 public class ListaEncadeada<T> {
-
      No<T> refEntrada;
-
      ListaEncadeada(){
          this.refEntrada = null;
      }
 
-     public boolean add(T conteudo){
+     public void add(T conteudo){
         No<T> novoNo = new No(conteudo);
         if(this.isEmpty()){
             refEntrada = novoNo;
-            return true;
+            return;
         }
-        try{
          No refAux = refEntrada;
-         for (int i = 0; i < size() - 1; i++) {
+         for (int i = 0; i < size() -1; i++) {
              refAux = refAux.getProximoNo();
          }
          refAux.setProximoNo(novoNo);
-         return true;
-        }catch (Exception e){
-            throw new RuntimeException(e);
-        }
      }
 
      public T get(int index ){
@@ -79,9 +72,22 @@ public class ListaEncadeada<T> {
          }
          return tamanhoLista;
      }
-
      public boolean isEmpty(){
          return  refEntrada == null? true: false;
      }
 
+    @Override
+    public String toString() {
+
+         String builderStr = "";
+         No<T> noAux = refEntrada;
+        for (int i = 0; i < size(); i++) {
+            builderStr += "[No{conteudo=" +  noAux.getConteudo() + "}]--->";
+            noAux = noAux.getProximoNo();
+        }
+
+        builderStr += "null";
+        return builderStr;
+
+    }
 }

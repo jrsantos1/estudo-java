@@ -2,7 +2,7 @@ package br.com.edu.topicos.entrutura_de_dados.dinamica.listaEncadeada;
 
 public class No<T> {
     private T conteudo;
-    private No proximoNo;
+    private No<T> proximoNo;
 
     public No(){
         this.proximoNo = null;
