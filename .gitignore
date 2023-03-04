@@ -2,6 +2,8 @@ vscode
 bin
 libs
 out
+.classpath
+.project
 EstudosJava.eml
 EstudosJava.iml
 ordenado.txt
