@@ -21,7 +21,6 @@ public class MainFluxoNaoBloqueante {
                 new NotaFiscal("Jhonatan", 5000.00, LocalDate.now()),
                 new NotaFiscal("Joaquin", 3000.00, LocalDate.now()),
                 new NotaFiscal("Pedro", 5880.00, LocalDate.now())
-
         );
 
         // selecionar método que irá 'consumir' as notas fiscais
@@ -34,8 +33,6 @@ public class MainFluxoNaoBloqueante {
         notasFiscais.forEach(nf -> {
             publisher.submit(nf);
         });
-
-
 
         System.out.println("Você irá receber a nota fiscal no seu e-mail");
         Scanner sc = new Scanner(System.in);
