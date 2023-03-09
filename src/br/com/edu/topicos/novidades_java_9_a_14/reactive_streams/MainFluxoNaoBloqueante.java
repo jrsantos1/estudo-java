@@ -36,8 +36,6 @@ public class MainFluxoNaoBloqueante {
             publisher.submit(nf);
         });
 
-
-
         System.out.println("Você irá receber a nota fiscal no seu e-mail");
         Scanner sc = new Scanner(System.in);
         sc.next();
