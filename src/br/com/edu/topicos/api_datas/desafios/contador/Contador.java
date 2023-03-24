@@ -10,12 +10,12 @@ public class Contador {
     }
 
     public void run(){
-        String option = "";
-        while (!option.equalsIgnoreCase("sim")){
-            System.out.println("Do you want leave?: ");
-            option = (String) sc.nextLine();
+        String opcao = "";
+        while (!opcao.equalsIgnoreCase("sim")){
+            System.out.println("Deseja sair: ");
+            opcao = (String) sc.nextLine();
         }
-        int end = (int) Math.round((System.currentTimeMillis() - initial)/1000);
-        System.out.println(end);
+        finall = (int) Math.round((System.currentTimeMillis() - initial)/1000);
+        System.out.println(finall);
     }
 }

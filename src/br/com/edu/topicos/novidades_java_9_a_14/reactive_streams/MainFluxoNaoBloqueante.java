@@ -27,7 +27,6 @@ public class MainFluxoNaoBloqueante {
         NotaFiscalWSClient nfsws = new NotaFiscalWSClient();
         publisher.consume(nfsws::enviar);
         publisher.consume(data -> {
-
             System.out.println("Executando thread: " + Thread.currentThread().getName());
         });
 
