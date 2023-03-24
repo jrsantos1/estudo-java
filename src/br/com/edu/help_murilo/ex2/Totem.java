@@ -17,7 +17,6 @@ public class Totem {
                 preparando.remove(i);
             }
         }
-
         pronto.add(numeroPedido);
     }
 
@@ -48,5 +47,6 @@ public class Totem {
 
         System.out.println();
     }
+
 
 }

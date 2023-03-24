@@ -1,7 +1,5 @@
 package br.com.edu.topicos.entrutura_de_dados.dinamica.listaEncadeada;
 
-import br.com.edu.topicos.entrutura_de_dados.estatica.Lista;
-
 public class ListaEncadeada<T> {
      No<T> refEntrada;
      ListaEncadeada(){

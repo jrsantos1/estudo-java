@@ -1,7 +1,5 @@
 package br.com.edu.topicos.entrutura_de_dados.dinamica.listaLigada;
 
-import br.com.edu.topicos.entrutura_de_dados.estatica.Lista;
-
 import java.util.ArrayList;
 
 public class Main {

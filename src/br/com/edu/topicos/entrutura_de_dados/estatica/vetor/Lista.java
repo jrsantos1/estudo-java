@@ -1,4 +1,4 @@
-package br.com.edu.topicos.entrutura_de_dados.estatica;
+package br.com.edu.topicos.entrutura_de_dados.estatica.vetor;
 
 public class Lista<T> {
     private T[] objeto = (T[]) new Object[100];

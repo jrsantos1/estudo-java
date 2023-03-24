@@ -14,6 +14,7 @@ public class OperadorUnario {
         // metodo compose
 
         int resultadoCompose = aoQuadro.compose(vezesDois).compose(maisDois).apply(0);
+        System.out.println(resultadoCompose);
 
     }
 }

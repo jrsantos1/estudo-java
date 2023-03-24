@@ -1,4 +1,4 @@
-package br.com.edu.topicos.entrutura_de_dados.estatica;
+package br.com.edu.topicos.entrutura_de_dados.estatica.vetor;
 
 public class Aluno {
 
@@ -11,8 +11,6 @@ public class Aluno {
         this.idade = idade;
         this.matricula = matricula;
     }
-
-
 
     public String getNomeCompleto() {
         return nomeCompleto;

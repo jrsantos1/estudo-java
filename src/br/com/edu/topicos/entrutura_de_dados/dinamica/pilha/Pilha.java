@@ -16,8 +16,7 @@ public class Pilha {
             refNoEntrada = refNoEntrada.getReNo();
             return nopoped;
         }
-        return null;
-    }
+        return null;}
 
     public void push(int conteudo){
         No novoNo = new No(conteudo);
