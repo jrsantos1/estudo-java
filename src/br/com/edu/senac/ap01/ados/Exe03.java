@@ -1,4 +1,4 @@
-package br.com.edu.senac.ap01.ados.Ados;
+package br.com.edu.senac.ap01.ados;
 
 import java.util.Arrays;
 import java.util.List;
