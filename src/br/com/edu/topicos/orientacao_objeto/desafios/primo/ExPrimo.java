@@ -15,11 +15,13 @@ public class ExPrimo {
         }else{
             System.out.println("Não é primo");
         }
+
     }
+
     public static boolean ehPrimo(int numeroDigitado){
 
         for (int i = numeroDigitado; i > 0; i--) {
-
+            
             if (numeroDigitado % i == 0 ){
                 if (numeroDigitado != 1 &&  i != numeroDigitado){
                     return true;
@@ -29,5 +31,7 @@ public class ExPrimo {
             }
         }
         return false;
+
     }
 }
+    

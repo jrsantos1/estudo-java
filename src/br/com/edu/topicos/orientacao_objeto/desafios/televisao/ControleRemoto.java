@@ -1,11 +1,11 @@
 package br.com.edu.topicos.orientacao_objeto.desafios.televisao;
 
 public class ControleRemoto {
-
+    
     private int incremento = 1;
     private int decremento = -1;
 
-    Televisao televisao;
+    Televisao televisao; 
 
     public ControleRemoto(Televisao televisao){
         this.televisao = televisao;

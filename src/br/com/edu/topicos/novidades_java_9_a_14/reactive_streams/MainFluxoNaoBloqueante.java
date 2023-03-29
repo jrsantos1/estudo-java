@@ -21,12 +21,14 @@ public class MainFluxoNaoBloqueante {
                 new NotaFiscal("Jhonatan", 5000.00, LocalDate.now()),
                 new NotaFiscal("Joaquin", 3000.00, LocalDate.now()),
                 new NotaFiscal("Pedro", 5880.00, LocalDate.now())
+
         );
 
         // selecionar método que irá 'consumir' as notas fiscais
         NotaFiscalWSClient nfsws = new NotaFiscalWSClient();
         publisher.consume(nfsws::enviar);
         publisher.consume(data -> {
+
             System.out.println("Executando thread: " + Thread.currentThread().getName());
         });
 

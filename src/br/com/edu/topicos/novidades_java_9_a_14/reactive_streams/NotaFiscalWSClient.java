@@ -1,5 +1,7 @@
 package br.com.edu.topicos.novidades_java_9_a_14.reactive_streams;
 
+import br.com.edu.topicos.thread.ThreadExemplo;
+
 public class NotaFiscalWSClient {
     public void enviar(NotaFiscal notaFiscal){
         try {

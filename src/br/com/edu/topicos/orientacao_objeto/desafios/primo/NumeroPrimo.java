@@ -6,9 +6,9 @@ public class NumeroPrimo {
         boolean valida = true;
 
         for (int i = numero; i > 0; i--) {
-
+            
             if (i != numero && i != 1){
-
+                
                 if (numero % i == 0){
                     valida = false;
                     break;
@@ -26,5 +26,5 @@ public class NumeroPrimo {
         }
 
     }
-
+    
 }

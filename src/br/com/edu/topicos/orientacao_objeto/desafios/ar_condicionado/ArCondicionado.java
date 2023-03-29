@@ -1,15 +1,16 @@
 package br.com.edu.topicos.orientacao_objeto.desafios.ar_condicionado;
 
 public class ArCondicionado {
-    private int temperatura = 0;
+
+    private int temperatura = 0; 
     private int intensidadeDoVento = 0;
     private boolean ligado = false;
 
     public ArCondicionado(){
-        this.temperatura = 0;
+        this.temperatura = 0; 
         this.intensidadeDoVento = 0;
         this.ligado = false;
-    }
+    }    
 
     public void ligar(){
         this.ligado = true;
@@ -42,4 +43,8 @@ public class ArCondicionado {
     public void setLigado(boolean ligado) {
         this.ligado = ligado;
     }
+
+    
+
+    
 }

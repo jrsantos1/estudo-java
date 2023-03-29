@@ -1,7 +1,15 @@
 .vscode
+<<<<<<< HEAD
 bin/
 libs/
 out/
+=======
+bin
+libs
+out
+.classpath
+.project
+>>>>>>> c5d66a7af3850d8de63963af8e5f23b3309bc85f
 EstudosJava.eml
 EstudosJava.iml
 ordenado.txt

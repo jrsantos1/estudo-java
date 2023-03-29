@@ -14,18 +14,23 @@ public class ExecutarFila {
 
             while (continuar){
                 int opcaoUsuario = Menu.run(sc);
+
                 if (opcaoUsuario == 1){
-                    System.out.println("É preferêncil. \n1. Sim.\n2. Não.");
+                    System.out.println("É preferêncial. \n1. Sim.\n2. Não.");
                         opcaoUsuarioPreferencial = sc.nextInt();
                         boolean preferencial = opcaoUsuarioPreferencial == 1? true: false;
                         String senhaGerada = hospitalQueueManagement.getPassword(preferencial);
                         System.out.println("Senha gerada: " + senhaGerada);
+                } else if (opcaoUsuario == 2) {
+                    hospitalQueueManagement.next();
+                }else if (opcaoUsuario == 3) {
+                    hospitalQueueManagement.drawBoard();
                 } else if (opcaoUsuario == 0) {
                     continuar = false;
-                } else if (opcaoUsuario == 2) {
-                    hospitalQueueManagement.chamarProximoDaFila();
-                }
+                    break;
+                
             }
+        }
 
 
     }

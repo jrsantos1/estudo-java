@@ -8,7 +8,7 @@ public class ExSorteio {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
 
-
+        
         Aleatorio aleatorio = new Aleatorio();
         int numeroGerado = aleatorio.gerarNumeroAleatorio(1000);
 
@@ -37,10 +37,10 @@ public class ExSorteio {
                 }
 
             }
-
+            
         }
 
-
+       
 
     }
 }
