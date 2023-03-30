@@ -60,7 +60,6 @@ public class HospitalQueueManagement {
         return senha;
     }
 
-
     public void next(){
         if(isEmpty()){
             System.out.println("\nA lista está vazia");
@@ -73,8 +72,6 @@ public class HospitalQueueManagement {
         System.out.println("O próximo na fila é: " + queue[this.next]);
         //drawBoard();
         }}
-        
-        
     }
 
     public boolean isEmpty(){
@@ -96,7 +93,6 @@ public class HospitalQueueManagement {
             }
             interacao -= 1;
         }
-
 
         System.out.println("|--------------------|");
         System.out.println("|--- " + "Próximo" + "-- + " + this.queue[next] + "---|");
