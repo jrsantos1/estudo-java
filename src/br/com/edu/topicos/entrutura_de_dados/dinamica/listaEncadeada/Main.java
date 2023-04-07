@@ -9,8 +9,10 @@ public class Main {
 
         ListaEncadeada<Animal> animais = new ListaEncadeada<>();
 
-        animais.add(cachorro);
+        animais.add(aguia);
         animais.add(arara);
+        animais.add(porco);
+        animais.add(cachorro);
 
         System.out.println(animais);
 
