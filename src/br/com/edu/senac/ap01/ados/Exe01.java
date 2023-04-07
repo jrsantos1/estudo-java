@@ -12,5 +12,6 @@ public class Exe01 {
         Double valor = sc.nextDouble();
 
         System.out.println("O valor é " + valor);
+
     }
 }

@@ -62,6 +62,8 @@ public class ListaEncadeada<T> {
              if (refAuxiliar != null) {
                   tamanhoLista++;
                   if(refAuxiliar.getProximoNo() == null){
+                      break;
+                  }else{
                       refAuxiliar = refAuxiliar.getProximoNo();
                   }
              }else {
