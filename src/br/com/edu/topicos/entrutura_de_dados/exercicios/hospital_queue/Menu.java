@@ -1,8 +1,4 @@
 package br.com.edu.topicos.entrutura_de_dados.exercicios.hospital_queue;
-
-import javax.sound.midi.Soundbank;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Menu {

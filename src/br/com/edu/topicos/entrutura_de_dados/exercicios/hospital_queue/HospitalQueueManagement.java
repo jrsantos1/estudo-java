@@ -1,6 +1,6 @@
 package br.com.edu.topicos.entrutura_de_dados.exercicios.hospital_queue;
 
-import br.com.edu.topicos.orientacao_objeto.matematica.Mat;
+import java.util.ArrayList;
 
 public class HospitalQueueManagement {
     private String[] queue;
@@ -36,7 +36,6 @@ public class HospitalQueueManagement {
                 else{
                     String temp = senha;
                     int posicao = i;
-                    //this.queue[i] = senha;
                     for (int j = this.last; j > i; j--){
                         this.queue[j] = this.queue[j-1];
                     }
@@ -82,23 +81,29 @@ public class HospitalQueueManagement {
     }
 
     public void drawBoard(){
-        String strUltimasSenhas = "";
+        ArrayList<String> senhas = new ArrayList<>();
         boolean validar = true;
         int interacao = next;
         while (validar){
-            if (interacao - 1 >= 0){
-                strUltimasSenhas += queue[interacao - 1] + ", ";
+            if (interacao >= 0){
+                senhas.add(queue[interacao]);
             }else {
                 validar = false;
+            }
+            if (((next + 1) - interacao) >= 3){
+                validar = false;
+                continue;
             }
             interacao -= 1;
         }
 
+        String resultado = String.join(", ", senhas);
+
         System.out.println("|--------------------|");
-        System.out.println("|--- " + "Próximo" + "-- + " + this.queue[next] + "---|");
+        System.out.println("|----" + "Próximo" + "--" + this.queue[next + 1] + "---|");
         System.out.println("|--------------------|");
-        System.out.println("|--------------------|");
-        System.out.println("|--------------------|");
+        System.out.println("|"+" Últimas senhas:    "+"|");
+        System.out.println("|  "+ resultado +"  |");
         System.out.println("|--------------------|");
 
     }

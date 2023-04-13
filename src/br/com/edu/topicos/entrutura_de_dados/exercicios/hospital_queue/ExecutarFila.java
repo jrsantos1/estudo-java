@@ -1,9 +1,6 @@
 package br.com.edu.topicos.entrutura_de_dados.exercicios.hospital_queue;
 
-import br.com.edu.topicos.generics.Caixa;
-
 import java.util.Scanner;
-
 public class ExecutarFila {
     public static void main(String[] args) {
 
