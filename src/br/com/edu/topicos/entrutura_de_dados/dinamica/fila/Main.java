@@ -1,4 +1,3 @@
-package br.com.edu.topicos.entrutura_de_dados.dinamica.fila;
 
 public class Main {
     public static void main(String[] args) {

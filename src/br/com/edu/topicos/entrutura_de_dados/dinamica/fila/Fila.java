@@ -1,4 +1,3 @@
-package br.com.edu.topicos.entrutura_de_dados.dinamica.fila;
 
 public class Fila<T> {
 
@@ -15,13 +14,13 @@ public class Fila<T> {
     }
 
     public void enqueue(T conteudo){
-        No novoNo = new No(conteudo);
+        No<T> novoNo = new No<T>(conteudo);
         novoNo.setNoRef(refNoEntradaFila);
         refNoEntradaFila = novoNo;
     }
 
     public T first(){
-        No noEntrada = refNoEntradaFila;
+        No<T> noEntrada = refNoEntradaFila;
         if(!isEmpty()){
             while(true){
                 if(noEntrada.getNoRef() != null){
@@ -34,9 +33,9 @@ public class Fila<T> {
         return null;
         }
 
-    public No dequeue(){
-        No primeiroNo = refNoEntradaFila;
-        No noAux = refNoEntradaFila;
+    public No<T> dequeue(){
+        No<T> primeiroNo = refNoEntradaFila;
+        No<T> noAux = refNoEntradaFila;
         if (this.isEmpty())
             return null;
         while (true){
@@ -58,7 +57,7 @@ public class Fila<T> {
 
         if(this.isEmpty())
             return "";
-        No noAux = refNoEntradaFila;
+        No<T> noAux = refNoEntradaFila;
         boolean validaLooping = true;
         while (validaLooping){
 

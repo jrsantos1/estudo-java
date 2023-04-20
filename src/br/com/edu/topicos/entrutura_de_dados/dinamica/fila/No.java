@@ -1,8 +1,7 @@
-package br.com.edu.topicos.entrutura_de_dados.dinamica.fila;
 
 public class No<T> {
     private T conteudo;
-    private No noRef;
+    private No<T> noRef;
 
     public No(T conteudo){
         this.noRef = null;
@@ -19,11 +18,11 @@ public class No<T> {
         this.conteudo = conteudo;
     }
 
-    public No getNoRef() {
+    public No<T> getNoRef() {
         return noRef;
     }
 
-    public void setNoRef(No noRef) {
+    public void setNoRef(No<T> noRef) {
         this.noRef = noRef;
     }
 
